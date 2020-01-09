@@ -8,6 +8,9 @@ export default class Search {
 		this.query = query;
 	}
 
+	/** getResults method
+	 *
+	 */
 	async getResults() {
 		try {
 			const res = await axios(
