@@ -51,7 +51,6 @@ const controlSearch = async () => {
 // Event Listeners
 
 // Search form
-
 elements.searchForm.addEventListener('submit', e => {
 	e.preventDefault();
 	controlSearch();
@@ -81,9 +80,10 @@ const controlRecipe = async () => {
 
 		state.recipe = new Recipe(id);
 
-		// get recipe data
 		try {
+			// get recipe data and parse ingriedients
 			await state.recipe.getRecipe();
+			state.recipe.parseIngredients();
 
 			// calculate time and serings
 			state.recipe.calcTime();
