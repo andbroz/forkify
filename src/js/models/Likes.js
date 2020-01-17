@@ -3,14 +3,15 @@ export default class Likes {
 		this.likes = [];
 	}
 
-	addLike(id, title, author, image) {
+	addLike(id, title, author, img) {
 		const like = {
 			id,
 			title,
 			author,
-			image
+			img
 		};
 		this.likes.push(like);
+		return like;
 	}
 	deleteLike(id) {
 		const index = this.likes.findIndex(el => el.id === id);
