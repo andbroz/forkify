@@ -15,7 +15,7 @@ import { elements, renderLoader, clearLoader } from './views/base';
  *  - Linked recipes
  */
 const state = {};
-window.state = state;
+// window.state = state;
 
 // Functions
 
