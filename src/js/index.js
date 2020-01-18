@@ -17,7 +17,6 @@ import { elements, renderLoader, clearLoader } from './views/base';
  *  - Linked recipes
  */
 const state = {};
-// window.state = state;
 
 // Functions
 
@@ -77,7 +76,6 @@ elements.searchResPages.addEventListener('click', e => {
 
 const controlRecipe = async () => {
 	const id = window.location.hash.replace('#', '');
-	// console.log(id);
 
 	if (id) {
 		// prepare UI for changes
